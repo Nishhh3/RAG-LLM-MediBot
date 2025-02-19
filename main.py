@@ -1,6 +1,3 @@
-import sys
-sys.path.append(r" C:\Users\NISHANT\AppData\Local\Programs\Python\Python313\Lib\site-packages")
-sys.path.append(r"  C:\Users\NISHANT\AppData\Local\Programs\Python\Python313\Lib\site-packages")
 import os 
 import streamlit as st
 from langchain_community.embeddings import HuggingFaceEmbeddings

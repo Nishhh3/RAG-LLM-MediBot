@@ -40,18 +40,18 @@ pip install -r requirements.txt
 ```
 4. Add your Knowledge Base
 
-  4.1 Based on your requirements of chatbot add resources (pdf files) in the context folder
-
-  4.2 PDFs of books, research papers, articles, documents,
-
-  Optional -> in context_maker.py modify the chunk_size and chunk_overlap based on the size of your data to fine tune the embeddings based on your requirements.
-
-  4.3 run context_maker.py file
+    4.1 Based on your requirements of chatbot add resources (pdf files) in the context folder
+  
+    4.2 PDFs of books, research papers, articles, documents,
+  
+    Optional -> in context_maker.py modify the chunk_size and chunk_overlap based on the size of your data to fine tune the embeddings based on your requirements.
+  
+    4.3 run context_maker.py file
 5. Preapre to Load LLM and load the llm with memory of the vector database
 
-  5.1 Make sure to use your huggingface API token after creating an account on Hugging Face and generating an API key with appropiate User permissions [enable repo and inference permissions] and then use that API   key in code
-
-  5.2 You can modify the parameters based on your requirements in memory_with_llm.py
+    5.1 Make sure to use your huggingface API token after creating an account on Hugging Face and generating an API key with appropiate User permissions [enable repo and inference permissions] and then use that API   key in code
+  
+    5.2 You can modify the parameters based on your requirements in memory_with_llm.py
 
 6. Run the main.py file using streamlit to serve the RAG
 ```sh

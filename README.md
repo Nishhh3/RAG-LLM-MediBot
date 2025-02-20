@@ -29,16 +29,16 @@ Make sure you have
 ```sh
 python3 -m venv env
 ```
-3. activate virtual env
+2. activate virtual env
 ```sh
 env/Scripts/activate #Windows
 source env/bin/activate #Linux
 ```
-5. install requirements.
+3. install requirements.
 ```sh
 pip install -r requirements.txt
 ```
-7. Add your Knowledge Base
+4. Add your Knowledge Base
 
   4.1 Based on your requirements of chatbot add resources (pdf files) in the context folder
 
@@ -47,7 +47,6 @@ pip install -r requirements.txt
   Optional -> in context_maker.py modify the chunk_size and chunk_overlap based on the size of your data to fine tune the embeddings based on your requirements.
 
   4.3 run context_maker.py file
-
 5. Preapre to Load LLM and load the llm with memory of the vector database
 
   5.1 Make sure to use your huggingface API token after creating an account on Hugging Face and generating an API key with appropiate User permissions [enable repo and inference permissions] and then use that API   key in code
